@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="Geolocation.Inicio">
+
+  <StackLayout Padding="20">
+    <StackLayout Padding="20">
+
+      <Label Bounds="230,120,20,50" FontFamily="Medium Bold Font" x:Name="TxtLat" BackgroundColor="Lime"/>
+
+
+      <Label x:Name="TxtLong" BackgroundColor="Green"  FontFamily="Droid Sans"/>
+
+      <maps:Map></maps:Map> 
+
+
+    </StackLayout>
+    <Button FontFamily="Droid Sans" Text="Donde pollas estoy?" Clicked="Button_OnClicked" BackgroundColor="Olive"/>
+    <Button FontFamily="Droid Serif" Text="Donde pollas estoy?" Clicked="ButtonDelete" BackgroundColor="Green"/>
+  </StackLayout>
+
+</ContentPage>
